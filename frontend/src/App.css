@@ -1,42 +1,81 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Global Styles - Force light text everywhere */
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc !important;
+  min-height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Force all text to be visible */
+body * {
+  color: #f8fafc !important;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
+/* Specific overrides for Bootstrap components */
 .card {
-  padding: 2em;
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: #f8fafc !important;
 }
 
-.read-the-docs {
-  color: #888;
+.card-body,
+.card-header,
+.card-title,
+.card-text {
+  color: #f8fafc !important;
+}
+
+.card .text-muted {
+  color: #94a3b8 !important;
+}
+
+.form-control,
+.form-select {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f8fafc !important;
+}
+
+.form-control::placeholder {
+  color: #94a3b8 !important;
+}
+
+.btn {
+  color: #f8fafc !important;
+}
+
+.navbar {
+  background: rgba(15, 23, 42, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #f8fafc !important;
+}
+
+/* Ensure all alerts have visible text */
+.alert {
+  color: inherit !important;
+}
+
+.alert-warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f8fafc !important;
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+/* Make sure all badges have proper contrast */
+.badge {
+  color: #f8fafc !important;
+}
+
+/* Tournament component text visibility */
+.tournament-card,
+.tournament-title,
+.tournament-info {
+  color: #f8fafc !important;
 }

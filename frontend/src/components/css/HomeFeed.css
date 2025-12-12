@@ -1,0 +1,35 @@
+/* HomeFeed.css */
+.home-feed {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.create-post-section {
+  border-radius: 10px;
+}
+
+.post-card {
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.post-card .card-body {
+  padding: 15px;
+}
+
+.post-actions {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #1877f2;
+  border-color: #1877f2;
+}
+
+.btn-primary:hover {
+  background-color: #166fe5;
+  border-color: #166fe5;
+}
